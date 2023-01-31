@@ -63,28 +63,25 @@ header img {
     justify-content: space-between;
 }
 
-.escolha li {
+.escolha ul li {
     list-style-type: none;
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    background-color: #F2F2F2;
+    border: 0.5px solid #C4C4C4;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-.naoSelecionado {
-    background-color: #F2F2F2;
-    border: 0.5px solid #C4C4C4;
-}
-
-.selecionado {
-    background-color: red;
+.escolha .selecionado {
+    border: 3px solid #404EED;
 }
 
 .itens ul li img {
-    width: 80px;
+    width: 70px;
 }
 
 .linkReferencia {
@@ -104,6 +101,7 @@ header img {
     width: 396px;
     height: 40px;
     background: #F2F2F2;
+    border: 0;
     border-radius: 10px;
     margin-bottom: 23px;
     padding: 2%;
