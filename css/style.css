@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #F2F2F2;
+}
+
 header {
     max-width: 100%;
     height: 89px;
@@ -25,18 +29,20 @@ header img {
     width: 1280px;
     display: flex;
     justify-content: space-between;
-    margin: 40px auto 0 auto;
+    margin: 0 auto;
 }
 
 .itens {
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 50%;
+    padding: 35px 0;
 }
 
 .opcoes {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .escolha {
@@ -57,18 +63,104 @@ header img {
     justify-content: space-between;
 }
 
-.itens ul li {
+.escolha li {
     list-style-type: none;
     width: 100px;
     height: 100px;
-    background: #F2F2F2;
-    border: 0.5px solid #C4C4C4;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.naoSelecionado {
+    background-color: #F2F2F2;
+    border: 0.5px solid #C4C4C4;
+}
+
+.selecionado {
+    background-color: red;
+}
+
+.itens ul li img {
+    width: 80px;
+}
+
+.linkReferencia {
+    margin-top: 33px;
+    max-width: 500px;
+}
+
+.linkReferencia h1 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #232323;
+    margin-bottom: 10px;
+}
+
+.linkReferencia input {
+    width: 396px;
+    height: 40px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    margin-bottom: 23px;
+    padding: 2%;
+    outline: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #818181;
+}
+
+.linkReferencia button {
+    width: 396px;
+    height: 40px;
+    background: #C4C4C4;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.referencia {
+    background-color: blue;
+}
+
+/************/
+
+footer {
+    max-width: 1280px;
+    margin: 30px auto;
+}
+
+footer h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #232323;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+footer ul li {
+    list-style-type: none;
+    width: 200px;
+    height: 236px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.itens ul li img {
-    width: 80px;
+footer ul li img {
+    width: 180px;
+    height: 180px;
 }
